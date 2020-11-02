@@ -27,7 +27,7 @@ namespace LeetCode
             //t2.Start();
             //t3.Start();
 
-            Problems.PrintFooBarAlternately.FooBar fooBar = new Problems.PrintFooBarAlternately.FooBar(3);
+            var fooBar = new Problems.PrintFooBarAlternatelyChannels.FooBar(3);
             var t1 = new Thread(() => { fooBar.Bar(() => { Console.Write("bar"); }); });
             var t2 = new Thread(() => { fooBar.Foo(() => { Console.Write("foo"); }); });
             t2.Start();
