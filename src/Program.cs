@@ -27,11 +27,19 @@ namespace LeetCode
             //t2.Start();
             //t3.Start();
 
-            var fooBar = new Problems.PrintFooBarAlternatelyChannels.FooBar(3);
-            var t1 = new Thread(() => { fooBar.Bar(() => { Console.Write("bar"); }); });
-            var t2 = new Thread(() => { fooBar.Foo(() => { Console.Write("foo"); }); });
-            t2.Start();
+            //var fooBar = new Problems.PrintFooBarAlternatelyChannels.FooBar(3);
+            //var t1 = new Thread(() => { fooBar.Bar(() => { Console.Write("bar"); }); });
+            //var t2 = new Thread(() => { fooBar.Foo(() => { Console.Write("foo"); }); });
+            //t2.Start();
+            //t1.Start();
+
+            var h20 = new H2O();
+            var t1 = new Thread(() => { h20.Hydrogen(() => { Console.Write("H"); }); });
+            var t2 = new Thread(() => { h20.Oxygen(() => { Console.Write("O"); }); });
+            var t3 = new Thread(() => { h20.Hydrogen(() => { Console.Write("H"); }); });
             t1.Start();
+            t2.Start();
+            t3.Start();
         }
     }
 }

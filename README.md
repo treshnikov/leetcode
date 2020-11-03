@@ -1,2 +1,2 @@
 # Overview
-Code snippets for the problems from [leetcode](https://leetcode.com).
+Code snippets for the [leetcode](https://leetcode.com) problems.

@@ -1,6 +1,7 @@
 ﻿using System;
 namespace LeetCode.Problems.PrintFooBarAlternately
 {
+    // https://leetcode.com/problems/print-foobar-alternately/
     public class FooBar
     {
         private int n;

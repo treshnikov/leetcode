@@ -2,6 +2,7 @@ using System.Collections.Generic;
 
 namespace LeetCode.Problems
 {
+    // https://leetcode.com/problems/two-sum/
     public static class TwoSum
     {
         public static int[] Main(int[] nums, int target)
