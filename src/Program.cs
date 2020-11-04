@@ -1,5 +1,6 @@
 ﻿using LeetCode.Problems;
 using System;
+using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -33,13 +34,20 @@ namespace LeetCode
             //t2.Start();
             //t1.Start();
 
-            var h20 = new H2O();
-            var t1 = new Thread(() => { h20.Hydrogen(() => { Console.Write("H"); }); });
-            var t2 = new Thread(() => { h20.Oxygen(() => { Console.Write("O"); }); });
-            var t3 = new Thread(() => { h20.Hydrogen(() => { Console.Write("H"); }); });
-            t1.Start();
-            t2.Start();
-            t3.Start();
+            //var h20 = new H2O();
+            //var t1 = new Thread(() => { h20.Hydrogen(() => { Console.Write("H"); }); });
+            //var t2 = new Thread(() => { h20.Oxygen(() => { Console.Write("O"); }); });
+            //var t3 = new Thread(() => { h20.Hydrogen(() => { Console.Write("H"); }); });
+            //t1.Start();
+            //t2.Start();
+            //t3.Start();
+
+            Console.WriteLine(LongestSubstringWithoutRepeatingCharacters.LengthOfLongestSubstring("abcabcbb"));
+            Console.WriteLine(LongestSubstringWithoutRepeatingCharacters.LengthOfLongestSubstring("bbbbb"));
+            Console.WriteLine(LongestSubstringWithoutRepeatingCharacters.LengthOfLongestSubstring("pwwkew"));
+            Console.WriteLine(LongestSubstringWithoutRepeatingCharacters.LengthOfLongestSubstring(""));
+            Console.WriteLine(LongestSubstringWithoutRepeatingCharacters.LengthOfLongestSubstring(" "));
+            Console.WriteLine(LongestSubstringWithoutRepeatingCharacters.LengthOfLongestSubstring("dvdf"));
         }
     }
 }
