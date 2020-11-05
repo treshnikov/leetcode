@@ -42,12 +42,20 @@ namespace LeetCode
             //t2.Start();
             //t3.Start();
 
-            Console.WriteLine(LongestSubstringWithoutRepeatingCharacters.LengthOfLongestSubstring("abcabcbb"));
-            Console.WriteLine(LongestSubstringWithoutRepeatingCharacters.LengthOfLongestSubstring("bbbbb"));
-            Console.WriteLine(LongestSubstringWithoutRepeatingCharacters.LengthOfLongestSubstring("pwwkew"));
-            Console.WriteLine(LongestSubstringWithoutRepeatingCharacters.LengthOfLongestSubstring(""));
-            Console.WriteLine(LongestSubstringWithoutRepeatingCharacters.LengthOfLongestSubstring(" "));
-            Console.WriteLine(LongestSubstringWithoutRepeatingCharacters.LengthOfLongestSubstring("dvdf"));
+            //Console.WriteLine(LongestSubstringWithoutRepeatingCharacters.LengthOfLongestSubstring("abcabcbb"));
+            //Console.WriteLine(LongestSubstringWithoutRepeatingCharacters.LengthOfLongestSubstring("bbbbb"));
+            //Console.WriteLine(LongestSubstringWithoutRepeatingCharacters.LengthOfLongestSubstring("pwwkew"));
+            //Console.WriteLine(LongestSubstringWithoutRepeatingCharacters.LengthOfLongestSubstring(""));
+            //Console.WriteLine(LongestSubstringWithoutRepeatingCharacters.LengthOfLongestSubstring(" "));
+            //Console.WriteLine(LongestSubstringWithoutRepeatingCharacters.LengthOfLongestSubstring("dvdf"));
+
+            //Console.WriteLine(FindMedianSortedArrays.Main(new int[] { 1, 3 }, new int[] { 2 }));
+            //Console.WriteLine(FindMedianSortedArrays.Main(new int[] { 1, 2 }, new int[] { 3, 4 }));
+            //Console.WriteLine(FindMedianSortedArrays.Main(new int[] { 0, 0 }, new int[] { 0, 0 }));
+            //Console.WriteLine(FindMedianSortedArrays.Main(new int[] { }, new int[] { 1 }));
+            //Console.WriteLine(FindMedianSortedArrays.Main(new int[] { 2 }, new int[] { }));
+            //Console.WriteLine(FindMedianSortedArrays.Main(new int[] { 3 }, new int[] { -2, -1 }));
+            //Console.WriteLine(FindMedianSortedArrays.Main(new int[] { 4,5,6,8,9 }, new int[] { }));
         }
     }
 }
