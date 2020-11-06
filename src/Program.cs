@@ -64,17 +64,17 @@ namespace LeetCode
             //Console.WriteLine(LongestPalindromicSubstring.Main("ac"));
             //Console.WriteLine(LongestPalindromicSubstring.Main(""));
 
-            var obj = new FizzBuzz(15);
-            var a = new Thread(() => { obj.Fizz(() => { Console.WriteLine("fiz"); }); });
-            var b = new Thread(() => { obj.Buzz(() => { Console.WriteLine("buzz"); }); });
-            var c = new Thread(() => { obj.Fizzbuzz(() => { Console.WriteLine("fizbuzz"); }); });
-            var d = new Thread(() => { obj.Number(i => { Console.WriteLine(i); }); });
+            //var obj = new FizzBuzz(15);
+            //var a = new Thread(() => { obj.Fizz(() => { Console.WriteLine("fiz"); }); });
+            //var b = new Thread(() => { obj.Buzz(() => { Console.WriteLine("buzz"); }); });
+            //var c = new Thread(() => { obj.Fizzbuzz(() => { Console.WriteLine("fizbuzz"); }); });
+            //var d = new Thread(() => { obj.Number(i => { Console.WriteLine(i); }); });
+            //b.Start();
+            //a.Start();
+            //c.Start();
+            //d.Start();
 
-            b.Start();
-            a.Start();
-            c.Start();
-            d.Start();
-        
+            Console.WriteLine(ReverseInteger.Main(-123));
         }
     }
 }
