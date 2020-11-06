@@ -5,6 +5,7 @@ using System.Text;
 
 namespace LeetCode.Problems
 {
+    // https://leetcode.com/problems/longest-palindromic-substring/
     public static class LongestPalindromicSubstring
     {
         public static string Main(string s)

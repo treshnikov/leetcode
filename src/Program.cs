@@ -57,12 +57,24 @@ namespace LeetCode
             //Console.WriteLine(FindMedianSortedArrays.Main(new int[] { 3 }, new int[] { -2, -1 }));
             //Console.WriteLine(FindMedianSortedArrays.Main(new int[] { 4,5,6,8,9 }, new int[] { }));
 
-            Console.WriteLine(LongestPalindromicSubstring.Main(""));
-            Console.WriteLine(LongestPalindromicSubstring.Main("babad"));
-            Console.WriteLine(LongestPalindromicSubstring.Main("cbbd"));
-            Console.WriteLine(LongestPalindromicSubstring.Main("a"));
-            Console.WriteLine(LongestPalindromicSubstring.Main("ac"));
-            Console.WriteLine(LongestPalindromicSubstring.Main(""));
+            //Console.WriteLine(LongestPalindromicSubstring.Main(""));
+            //Console.WriteLine(LongestPalindromicSubstring.Main("babad"));
+            //Console.WriteLine(LongestPalindromicSubstring.Main("cbbd"));
+            //Console.WriteLine(LongestPalindromicSubstring.Main("a"));
+            //Console.WriteLine(LongestPalindromicSubstring.Main("ac"));
+            //Console.WriteLine(LongestPalindromicSubstring.Main(""));
+
+            var obj = new FizzBuzz(15);
+            var a = new Thread(() => { obj.Fizz(() => { Console.WriteLine("fiz"); }); });
+            var b = new Thread(() => { obj.Buzz(() => { Console.WriteLine("buzz"); }); });
+            var c = new Thread(() => { obj.Fizzbuzz(() => { Console.WriteLine("fizbuzz"); }); });
+            var d = new Thread(() => { obj.Number(i => { Console.WriteLine(i); }); });
+
+            b.Start();
+            a.Start();
+            c.Start();
+            d.Start();
+        
         }
     }
 }
