@@ -74,7 +74,14 @@ namespace LeetCode
             //c.Start();
             //d.Start();
 
-            Console.WriteLine(ReverseInteger.Main(-123));
+            //Console.WriteLine(ReverseInteger.Main(-123));
+
+            Console.WriteLine(ZigZagConversion.Convert("PAYPALISHIRING", 3));
+            Console.WriteLine(ZigZagConversion.Convert("PAYPALISHIRING", 4));
+            Console.WriteLine(ZigZagConversion.Convert("A", 1));
+            Console.WriteLine(ZigZagConversion.Convert("AB", 1));
+            Console.WriteLine(ZigZagConversion.Convert("ABC", 1));
+
         }
     }
 }
