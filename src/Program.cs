@@ -93,7 +93,9 @@ namespace LeetCode
             //Console.WriteLine(MyAtoi.Main("words and 987"));
             //Console.WriteLine(MyAtoi.Main("-91283472332"));
 
-            Console.WriteLine(IntPalindrome.IsPalindrome(10));
+            //Console.WriteLine(IntPalindrome.IsPalindrome(10));
+
+            Console.WriteLine(IntegerToRoman.IntToRoman(3));
         }
     }
 }
