@@ -95,7 +95,9 @@ namespace LeetCode
 
             //Console.WriteLine(IntPalindrome.IsPalindrome(10));
 
-            Console.WriteLine(IntegerToRoman.IntToRoman(3));
+            //Console.WriteLine(IntegerToRoman.IntToRoman(3));
+
+            Console.WriteLine(RomanToInteger.RomanToInt("MCMXCIV"));
         }
     }
 }
