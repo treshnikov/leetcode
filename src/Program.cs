@@ -76,12 +76,22 @@ namespace LeetCode
 
             //Console.WriteLine(ReverseInteger.Main(-123));
 
-            Console.WriteLine(ZigZagConversion.Convert("PAYPALISHIRING", 3));
-            Console.WriteLine(ZigZagConversion.Convert("PAYPALISHIRING", 4));
-            Console.WriteLine(ZigZagConversion.Convert("A", 1));
-            Console.WriteLine(ZigZagConversion.Convert("AB", 1));
-            Console.WriteLine(ZigZagConversion.Convert("ABC", 1));
+            //Console.WriteLine(ZigZagConversion.Convert("PAYPALISHIRING", 3));
+            //Console.WriteLine(ZigZagConversion.Convert("PAYPALISHIRING", 4));
+            //Console.WriteLine(ZigZagConversion.Convert("A", 1));
+            //Console.WriteLine(ZigZagConversion.Convert("AB", 1));
+            //Console.WriteLine(ZigZagConversion.Convert("ABC", 1));
 
+            Console.WriteLine(MyAtoi.Main("-91283472332"));         
+            Console.WriteLine(MyAtoi.Main("20000000000000000000"));
+            Console.WriteLine(MyAtoi.Main("   +0 123"));
+            Console.WriteLine(MyAtoi.Main("00000-42a1234"));
+            Console.WriteLine(MyAtoi.Main("+-12"));
+            Console.WriteLine(MyAtoi.Main("-"));
+            Console.WriteLine(MyAtoi.Main("   -42"));
+            Console.WriteLine(MyAtoi.Main("4193 with words"));
+            Console.WriteLine(MyAtoi.Main("words and 987"));
+            Console.WriteLine(MyAtoi.Main("-91283472332"));
         }
     }
 }
