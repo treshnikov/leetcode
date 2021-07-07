@@ -97,7 +97,9 @@ namespace LeetCode
 
             //Console.WriteLine(IntegerToRoman.IntToRoman(3));
 
-            Console.WriteLine(RomanToInteger.RomanToInt("MCMXCIV"));
+            //Console.WriteLine(RomanToInteger.RomanToInt("MCMXCIV"));
+
+            var res = MergeTwoSortedArrays.Merge(new int[] { 0, 1, 2, 7, 9 }, new int[] { 3, 8, 12, 15 });
         }
     }
 }
