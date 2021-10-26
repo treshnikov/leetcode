@@ -96,7 +96,14 @@ namespace LeetCode
 
             //Console.WriteLine(RomanToInteger.RomanToInt("MCMXCIV"));
 
-            var res = MergeTwoSortedArrays.Merge(new int[] { 0, 1, 2, 7, 9 }, new int[] { 3, 8, 12, 15 });
+            //var res = MergeTwoSortedArrays.Merge(new int[] { 0, 1, 2, 7, 9 }, new int[] { 3, 8, 12, 15 });
+
+            //var strs = new string[] { "flower","flow","flight" };
+            //var strs = new string[] { "baac", "acb", "bacc", "cb"};
+            //var strs = new string[] { "a" };
+            //var strs = new string[] { "ab", "a" };
+            var strs = new string[] { "flower", "flower", "flower", "flower"};
+            var res = LongestCommonPrefix.Main(strs);
         }
     }
 }
