@@ -105,8 +105,10 @@ namespace LeetCode
             //var strs = new string[] { "flower", "flower", "flower", "flower"};
             //var res = LongestCommonPrefix.Main(strs);
 
-            var input = new int[] { -1, 0, 1, 2, -1, -4 };
-            var res = ThreeSum.Main(input);
+            //var input = new int[] { -1, 0, 1, 2, -1, -4 };
+            //var res = ThreeSum.Main(input);
+
+            var res = ThreeSimClosets.Main(new int[] { -1, 2, 1, -4 }, 1);
         }
     }
 }
