@@ -102,8 +102,11 @@ namespace LeetCode
             //var strs = new string[] { "baac", "acb", "bacc", "cb"};
             //var strs = new string[] { "a" };
             //var strs = new string[] { "ab", "a" };
-            var strs = new string[] { "flower", "flower", "flower", "flower"};
-            var res = LongestCommonPrefix.Main(strs);
+            //var strs = new string[] { "flower", "flower", "flower", "flower"};
+            //var res = LongestCommonPrefix.Main(strs);
+
+            var input = new int[] { -1, 0, 1, 2, -1, -4 };
+            var res = ThreeSum.Main(input);
         }
     }
 }
