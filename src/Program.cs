@@ -1,4 +1,5 @@
 ﻿using LeetCode.Problems;
+using System;
 using System.Collections.Generic;
 
 namespace LeetCode
@@ -108,7 +109,8 @@ namespace LeetCode
             //var input = new int[] { -1, 0, 1, 2, -1, -4 };
             //var res = ThreeSum.Main(input);
 
-            var res = ThreeSimClosets.Main(new int[] { -1, 2, 1, -4 }, 1);
+            var res = ThreeSumClosets.Main(new int[] { -1, 2, 1, -4 }, 1);
+            Console.WriteLine(res);
         }
     }
 }
