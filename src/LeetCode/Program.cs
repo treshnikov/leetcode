@@ -8,10 +8,6 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            // var res = TwoSum.Main(new int[] { 2, 7, 11, 15 }, 9);
-            // res = TwoSum.Main(new int[] { 3, 2, 4 }, 6);
-            // res = TwoSum.Main(new int[] { 3, 3 }, 6);
-
             //var l1 = new ListNode(2, new ListNode(4, new ListNode(3)));
             //var l2 = new ListNode(5, new ListNode(6, new ListNode(4)));
             //var l1 = new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9)))))));
