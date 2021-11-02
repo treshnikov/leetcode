@@ -14,5 +14,13 @@ namespace Test
             var res = TwoSum.Main(nums, target);
             Assert.AreEqual(res, expectedResult);
         }
+
+        [TestCase("23", new string[]{"ad","ae","af","bd","be","bf","cd","ce","cf"})]
+        [TestCase("", new string[]{})]
+        [TestCase("2", new string[]{"a", "b", "c"})]
+        public void LetterCombinationsTest(string digits, string[] expectedResult)
+        {           
+            Assert.AreEqual(LetterCombinations.Main(digits), expectedResult);
+        }
     }
 }
