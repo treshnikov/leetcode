@@ -18,11 +18,11 @@ jobs:
       with:
         dotnet-version: 5.0.x
     - name: Restore dependencies
-      working-directory: src
+      working-directory: src/LeetCode
       run: dotnet restore
     - name: Build
-      working-directory: src
+      working-directory: src/LeetCode
       run: dotnet build --no-restore
     - name: Test
-      working-directory: src
+      working-directory: src/Test
       run: dotnet test --no-build --verbosity normal
