@@ -22,6 +22,17 @@ namespace Test
         {
             Assert.AreEqual(LetterCombinations.Main(digits), expectedResult);
         }
+
+        [TestCase]
+        public void RemoveNthFromEndTest()
+        {
+            var removeNthFromEnd = new RemoveNthFromEndProblem();
+            var head = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5, new ListNode(6, new ListNode(7)))))));
+            
+            removeNthFromEnd.RemoveNthFromEnd(head, 2);
+
+            Assert.IsTrue(head.next.next.next.next.next.val == 7);
+        }
         
     }
 }

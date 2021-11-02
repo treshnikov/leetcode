@@ -108,8 +108,14 @@ namespace LeetCode
             //var input = new int[] { -1, 0, 1, 2, -1, -4 };
             //var res = ThreeSum.Main(input);
 
-            var res = ThreeSumClosets.Main(new int[] { -1, 2, 1, -4 }, 1);
-            Console.WriteLine(res);
+            // var res = ThreeSumClosets.Main(new int[] { -1, 2, 1, -4 }, 1);
+            // Console.WriteLine(res);
+
+            var removeNthFromEnd = new RemoveNthFromEndProblem();
+            //var head = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5, new ListNode(6, new ListNode(7)))))));
+            var head = new ListNode(1, new ListNode(2));
+            removeNthFromEnd.RemoveNthFromEnd(head, 1);
+
         }
     }
 }
