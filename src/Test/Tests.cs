@@ -33,6 +33,19 @@ namespace Test
 
             Assert.IsTrue(head.next.next.next.next.next.val == 7);
         }
+
+        [TestCase("()", true)]
+        [TestCase("()[]{}", true)]
+        [TestCase("(]", false)]
+        [TestCase("([)]", false)]
+        [TestCase("{[]}", true)]
+        public void ValidParenthesesTest(string input, bool expectedResult)
+        {
+            var validParentheses = new ValidParentheses();
+            var res = validParentheses.IsValid(input);
+
+            Assert.AreEqual(res, expectedResult); 
+        }
         
     }
 }
