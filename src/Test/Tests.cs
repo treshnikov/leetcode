@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using LeetCode.Problems;
 using NUnit.Framework;
 
@@ -76,7 +77,17 @@ namespace Test
             var res = proc.Do(nums);
 
             Assert.AreEqual(res, expectedValue);
+        }
 
+        [TestCase(new int[] { 4, 3, 2, 7, 8, 2, 3, 1 }, new int[] { 5, 6 })]
+        [TestCase(new int[] { 1, 1 }, new int[] { 2 })]
+        public void FindAllNumbersDisappearedInAnArrayTest(int[] nums, int[] expectedValues)
+        {
+            var proc = new FindAllNumbersDisappearedInAnArray();
+
+            var res = proc.FindDisappearedNumbers(nums);
+
+            Assert.AreEqual(res, expectedValues);
         }
     }
 }

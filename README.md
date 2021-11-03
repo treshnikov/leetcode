@@ -19,11 +19,10 @@ Code snippets for the [leetcode](https://leetcode.com) problems.
 - 3Sum
 - 3Sum Closest
 - Letter Combinations of a Phone Number
-- 4Sum
 - Remove Nth Node From End of List
 - Valid Parentheses
 - Merge Two Sorted Lists
-
+- Find All Numbers Disappeared in an Array
 ## Concurrency
 - Print in Order
 - Print FooBar Alternately
