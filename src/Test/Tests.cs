@@ -28,7 +28,7 @@ namespace Test
         {
             var removeNthFromEnd = new RemoveNthFromEndProblem();
             var head = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5, new ListNode(6, new ListNode(7)))))));
-            
+
             removeNthFromEnd.RemoveNthFromEnd(head, 2);
 
             Assert.IsTrue(head.next.next.next.next.next.val == 7);
@@ -44,7 +44,7 @@ namespace Test
             var validParentheses = new ValidParentheses();
             var res = validParentheses.IsValid(input);
 
-            Assert.AreEqual(res, expectedResult); 
+            Assert.AreEqual(res, expectedResult);
         }
 
         [TestCase]
@@ -55,7 +55,7 @@ namespace Test
             var b = new ListNode(1, new ListNode(3, new ListNode(4)));
 
             var res = mergeTwoSortedLists.MergeTwoLists(a, b);
-            
+
             Assert.IsTrue(res.val == 1);
             Assert.IsTrue(res.next.val == 1);
             Assert.IsTrue(res.next.next.val == 2);
@@ -63,6 +63,20 @@ namespace Test
             Assert.IsTrue(res.next.next.next.next.val == 4);
             Assert.IsTrue(res.next.next.next.next.next.val == 4);
         }
-        
+
+
+        [TestCase(new int[] { 3, 0, 1 }, 2)]
+        [TestCase(new int[] { 0, 1 }, 2)]
+        [TestCase(new int[] { 9, 6, 4, 2, 3, 5, 7, 0, 1 }, 8)]
+        [TestCase(new int[] { 0 }, 1)]
+        public void MissingNumberTest(int[] nums, int expectedValue)
+        {
+            var proc = new MissingNumber();
+
+            var res = proc.Do(nums);
+
+            Assert.AreEqual(res, expectedValue);
+
+        }
     }
 }
