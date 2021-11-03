@@ -3,8 +3,8 @@ using System.Collections.Generic;
 namespace LeetCode.Problems
 {
     /// <summary>
-    /// https://leetcode.com/problems/valid-parentheses/
     /// </summary>
+    /// https://leetcode.com/problems/valid-parentheses/
     public class ValidParentheses
     {
         public bool IsValid(string s)

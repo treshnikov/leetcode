@@ -116,10 +116,13 @@ namespace LeetCode
             // var head = new ListNode(1, new ListNode(2));
             // removeNthFromEnd.RemoveNthFromEnd(head, 1);
 
-            var validParentheses = new ValidParentheses();
-            var res = validParentheses.IsValid("{[]}");
+            // var validParentheses = new ValidParentheses();
+            // var res = validParentheses.IsValid("{[]}");
 
-
+            // var mergeTwoSortedLists = new MergeTwoSortedLists();
+            // var a = new ListNode(1, new ListNode(2, new ListNode(4)));
+            // var b = new ListNode(1, new ListNode(3, new ListNode(4)));
+            // var res = mergeTwoSortedLists.MergeTwoLists(a, b);
         }
     }
 }

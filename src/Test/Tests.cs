@@ -46,6 +46,23 @@ namespace Test
 
             Assert.AreEqual(res, expectedResult); 
         }
+
+        [TestCase]
+        public void MergeTwoSortedListsTest()
+        {
+            var mergeTwoSortedLists = new MergeTwoSortedLists();
+            var a = new ListNode(1, new ListNode(2, new ListNode(4)));
+            var b = new ListNode(1, new ListNode(3, new ListNode(4)));
+
+            var res = mergeTwoSortedLists.MergeTwoLists(a, b);
+            
+            Assert.IsTrue(res.val == 1);
+            Assert.IsTrue(res.next.val == 1);
+            Assert.IsTrue(res.next.next.val == 2);
+            Assert.IsTrue(res.next.next.next.val == 3);
+            Assert.IsTrue(res.next.next.next.next.val == 4);
+            Assert.IsTrue(res.next.next.next.next.next.val == 4);
+        }
         
     }
 }
