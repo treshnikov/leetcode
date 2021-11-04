@@ -6,7 +6,7 @@ namespace LeetCode.Problems
 {
     public static class LetterCombinations
     {
-        public static IList<string> Main(string digits)
+        public static IList<string> Do(string digits)
         {
             var res = new List<string>();
             if (digits == null || digits.Length == 0)

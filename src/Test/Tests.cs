@@ -12,7 +12,7 @@ namespace Test
         [TestCase(new int[] { 3, 3 }, 6, new int[] { 0, 1 })]
         public void TwoSumTest(int[] nums, int target, int[] expectedResult)
         {
-            var res = TwoSum.Main(nums, target);
+            var res = TwoSum.Do(nums, target);
             Assert.AreEqual(res, expectedResult);
         }
 
@@ -21,7 +21,7 @@ namespace Test
         [TestCase("2", new string[] { "a", "b", "c" })]
         public void LetterCombinationsTest(string digits, string[] expectedResult)
         {
-            Assert.AreEqual(LetterCombinations.Main(digits), expectedResult);
+            Assert.AreEqual(LetterCombinations.Do(digits), expectedResult);
         }
 
         [TestCase]
@@ -88,6 +88,15 @@ namespace Test
             var res = proc.FindDisappearedNumbers(nums);
 
             Assert.AreEqual(res, expectedValues);
+        }
+
+        [TestCase]
+        public void SummTreeNodes()
+        {
+            var proc = new SumNumbersProblem();
+            var res = proc.SumNumbers(new TreeNode(4, new TreeNode(9, new TreeNode(5), new TreeNode(1)), new TreeNode(0)));
+
+            Assert.AreEqual(res, 1026);
         }
     }
 }

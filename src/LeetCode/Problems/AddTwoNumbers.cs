@@ -23,7 +23,7 @@ namespace LeetCode.Problems
 
         // Input: [9,9,9,9,9,9,9], [9,9,9,9]
         // Output: [8,9,9,9,0,0,0,1]
-        public static ListNode Main(ListNode l1, ListNode l2)
+        public static ListNode Do(ListNode l1, ListNode l2)
         {
             var a = l1;
             var b = l2;

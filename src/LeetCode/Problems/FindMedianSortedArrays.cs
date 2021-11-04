@@ -8,7 +8,7 @@ namespace LeetCode.Problems
     // https://leetcode.com/problems/median-of-two-sorted-arrays/
     public static class FindMedianSortedArrays
     {
-        public static double Main(int[] nums1, int[] nums2)
+        public static double Do(int[] nums1, int[] nums2)
         {
             int i = 0, j = 0;
             var res = new List<int>();

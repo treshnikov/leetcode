@@ -123,6 +123,9 @@ namespace LeetCode
             // var a = new ListNode(1, new ListNode(2, new ListNode(4)));
             // var b = new ListNode(1, new ListNode(3, new ListNode(4)));
             // var res = mergeTwoSortedLists.MergeTwoLists(a, b);
+
+            var proc = new SumNumbersProblem();
+            var res = proc.SumNumbers(new TreeNode(4, new TreeNode(9, new TreeNode(5), new TreeNode(1)), new TreeNode(0)));
         }
     }
 }

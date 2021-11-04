@@ -6,7 +6,7 @@ namespace LeetCode.Problems
 {
     public static class ThreeSumClosets
     {
-        public static int Main(int[] nums, int target)
+        public static int Do(int[] nums, int target)
         {
             Array.Sort(nums);
             var closeSum = nums[0] + nums[1] + nums[2];

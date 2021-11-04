@@ -7,7 +7,7 @@ namespace LeetCode.Problems
 {
     public static class LongestCommonPrefix
     {
-        public static string Main(string[] strs)
+        public static string Do(string[] strs)
         {
             // handle corner cases
             if (strs == null || strs.Length == 0 || strs[0] == string.Empty)

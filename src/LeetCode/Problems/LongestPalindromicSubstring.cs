@@ -8,7 +8,7 @@ namespace LeetCode.Problems
     // https://leetcode.com/problems/longest-palindromic-substring/
     public static class LongestPalindromicSubstring
     {
-        public static string Main(string s)
+        public static string Do(string s)
         {
             if (string.IsNullOrEmpty(s))
             {

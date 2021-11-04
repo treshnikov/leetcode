@@ -6,7 +6,7 @@ namespace LeetCode.Problems
 {
     public static class ThreeSum
     {
-        public static IList<IList<int>> Main(int[] nums)
+        public static IList<IList<int>> Do(int[] nums)
         {
             var res = new List<List<int>>();
             var dict = new Dictionary<int, int>();

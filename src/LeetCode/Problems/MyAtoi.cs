@@ -7,7 +7,7 @@ namespace LeetCode.Problems
     // https://leetcode.com/problems/string-to-integer-atoi
     public static class MyAtoi
     {
-        public static int Main(string s)
+        public static int Do(string s)
         {
             var digits = new Dictionary<char, int> { { '1' , 1}, { '2', 2 }, { '3', 3 }, { '4', 4 }, { '5', 5 }, { '6', 6 }, { '7', 7 }, { '8', 8 }, { '9', 9 }, { '0', 0 } };
             var isDigit = new Func<char, bool>(arg => { return digits.ContainsKey(arg); });

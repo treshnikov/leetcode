@@ -5,7 +5,7 @@ namespace LeetCode.Problems
     // https://leetcode.com/problems/two-sum/
     public static class TwoSum
     {
-        public static int[] Main(int[] nums, int target)
+        public static int[] Do(int[] nums, int target)
         {
             var dict = new Dictionary<int, int>();
             var res = new List<int>();

@@ -7,7 +7,7 @@ namespace LeetCode.Problems
     public static class ReverseInteger
     {
         //https://leetcode.com/problems/reverse-integer
-        public static int Main(int x)
+        public static int Do(int x)
         {
             long y = 0;
             while (x != 0)
