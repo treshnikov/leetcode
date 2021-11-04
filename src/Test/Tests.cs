@@ -98,5 +98,14 @@ namespace Test
 
             Assert.AreEqual(res, 1026);
         }
+
+        [TestCase]
+        public void SumLeftLeaves()
+        {
+            var proc = new SumOfLeftLeavesProblem();
+            var res = proc.Sum(new TreeNode(3, new TreeNode(9), new TreeNode(20, new TreeNode(15), new TreeNode(7))));
+
+            Assert.AreEqual(res, 24);
+        }
     }
 }
