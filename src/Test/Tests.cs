@@ -107,5 +107,16 @@ namespace Test
 
             Assert.AreEqual(res, 24);
         }
+
+        [TestCase(1, new string[] {"()"})]
+        [TestCase(2, new string[] {"(())", "()()"})]
+        [TestCase(3, new string[] {"((()))","(()())","(())()","()(())","()()()"})]
+        public void GenerateParenthesesTest(int n, string[] expectedResult)
+        {
+            var proc = new GenerateParenthesesProblem();
+            var res = proc.GenerateParentheses(n);
+
+            Assert.AreEqual(res, expectedResult);
+        }
     }
 }
