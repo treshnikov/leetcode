@@ -25,6 +25,7 @@ Code snippets for the [leetcode](https://leetcode.com) problems.
 - Find All Numbers Disappeared in an Array
 - Sum Root to Leaf Numbers
 - Generate Parentheses
+- Merge k Sorted Lists
 ## Concurrency
 - Sum of Left Leaves
 - Print in Order
