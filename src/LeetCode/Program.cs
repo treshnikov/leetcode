@@ -124,8 +124,14 @@ namespace LeetCode
             // var b = new ListNode(1, new ListNode(3, new ListNode(4)));
             // var res = mergeTwoSortedLists.MergeTwoLists(a, b);
 
-            var proc = new SumOfLeftLeavesProblem();
-            var res = proc.Sum(new TreeNode(3, new TreeNode(9), new TreeNode(20, new TreeNode(15), new TreeNode(7))));
+            // var proc = new SumOfLeftLeavesProblem();
+            // var res = proc.Sum(new TreeNode(3, new TreeNode(9), new TreeNode(20, new TreeNode(15), new TreeNode(7))));
+
+            var proc = new MergeKSortedLists();
+            ListNode[] nodes = new ListNode[]{new ListNode(1, new ListNode(4, new ListNode(5))),
+                                              new ListNode(1, new ListNode(3, new ListNode(4))),
+                                              new ListNode(2, new ListNode(6))};
+            var res = proc.Do(nodes);
         }
     }
 }

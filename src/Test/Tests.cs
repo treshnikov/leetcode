@@ -108,15 +108,34 @@ namespace Test
             Assert.AreEqual(res, 24);
         }
 
-        [TestCase(1, new string[] {"()"})]
-        [TestCase(2, new string[] {"(())", "()()"})]
-        [TestCase(3, new string[] {"((()))","(()())","(())()","()(())","()()()"})]
+        [TestCase(1, new string[] { "()" })]
+        [TestCase(2, new string[] { "(())", "()()" })]
+        [TestCase(3, new string[] { "((()))", "(()())", "(())()", "()(())", "()()()" })]
         public void GenerateParenthesesTest(int n, string[] expectedResult)
         {
             var proc = new GenerateParenthesesProblem();
             var res = proc.GenerateParentheses(n);
 
             Assert.AreEqual(res, expectedResult);
+        }
+
+        [TestCase]
+        public void MergeKSortedListsTest()
+        {
+            var proc = new MergeKSortedLists();
+            ListNode[] nodes = new ListNode[]{new ListNode(1, new ListNode(4, new ListNode(5))),
+                                              new ListNode(1, new ListNode(3, new ListNode(4))),
+                                              new ListNode(2, new ListNode(6))};
+            var res = proc.Do(nodes);
+
+            Assert.IsTrue(res.val == 1);
+            Assert.IsTrue(res.next.val == 1);
+            Assert.IsTrue(res.next.next.val == 2);
+            Assert.IsTrue(res.next.next.next.val == 3);
+            Assert.IsTrue(res.next.next.next.next.val == 4);
+            Assert.IsTrue(res.next.next.next.next.next.val == 4);
+            Assert.IsTrue(res.next.next.next.next.next.next.val == 5);
+            Assert.IsTrue(res.next.next.next.next.next.next.next.val == 6);
         }
     }
 }
