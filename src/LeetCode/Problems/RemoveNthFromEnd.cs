@@ -18,7 +18,7 @@ namespace LeetCode.Problems
     /// </summary>
     public class RemoveNthFromEndProblem
     {
-        public ListNode RemoveNthFromEnd(ListNode head, int n)
+        public static ListNode RemoveNthFromEnd(ListNode head, int n)
         {
             if (head.next == null && n == 1)
             {

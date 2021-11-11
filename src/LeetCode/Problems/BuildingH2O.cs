@@ -6,11 +6,11 @@ namespace LeetCode.Problems
     // https://leetcode.com/problems/building-h2o/
     public class H2O
     {
-        private System.Threading.SemaphoreSlim semaphoreHydrogen = new System.Threading.SemaphoreSlim(2, 2);
-        private System.Threading.AutoResetEvent twoHydrogenHasReceived = new System.Threading.AutoResetEvent(false);
-        private System.Threading.AutoResetEvent oneOxygenHasReceived = new System.Threading.AutoResetEvent(false);
-        private object lockObject1 = new object();
-        private object lockObject2 = new object();
+        private readonly System.Threading.SemaphoreSlim semaphoreHydrogen = new(2, 2);
+        private readonly System.Threading.AutoResetEvent twoHydrogenHasReceived = new(false);
+        private readonly System.Threading.AutoResetEvent oneOxygenHasReceived = new(false);
+        private readonly object lockObject1 = new();
+        private readonly object lockObject2 = new();
         public H2O()
         {
 

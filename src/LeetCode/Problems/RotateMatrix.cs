@@ -2,7 +2,7 @@ namespace LeetCode.Problems
 {
     public class RotateMatrixProblem
     {
-        public void Rotate(int[][] matrix)
+        public static void Rotate(int[][] matrix)
         {
             var n = matrix.Length;
             var res = new int[n, n];

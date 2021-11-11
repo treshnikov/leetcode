@@ -6,8 +6,8 @@ namespace LeetCode.Problems.PrintInOrder
     // https://leetcode.com/problems/print-in-order/
     public class Foo
     {
-        ManualResetEventSlim firstEvent = new ManualResetEventSlim(false);
-        ManualResetEventSlim secondEvent = new ManualResetEventSlim(false);
+        readonly ManualResetEventSlim firstEvent = new(false);
+        readonly ManualResetEventSlim secondEvent = new(false);
 
         public void First(Action printFirst)
         {

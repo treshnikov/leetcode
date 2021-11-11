@@ -17,7 +17,7 @@ namespace LeetCode.Problems
 
             if (a.Length == 0 && b.Length == 0)
             {
-                return new int[] { };
+                return System.Array.Empty<int>();
             }
 
             if (a.Length == 0)

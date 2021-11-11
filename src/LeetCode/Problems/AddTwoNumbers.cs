@@ -54,8 +54,8 @@ namespace LeetCode.Problems
                 }
 
                 previousNode = node;
-                a = a == null ? null : a.next;
-                b = b == null ? null : b.next;
+                a = a?.next;
+                b = b?.next;
 
                 if (a == null && b == null)
                 {

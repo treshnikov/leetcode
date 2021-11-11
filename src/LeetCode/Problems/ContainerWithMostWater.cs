@@ -12,10 +12,9 @@ namespace LeetCode.Problems
             var left = 0;
             var right = height.Length - 1;
             var maxSqueare = 0;
-            var square = 0;
-
             while (left < right)
             {
+                int square;
                 if (height[left] < height[right])
                 {
                     square = (right - left) * height[left];

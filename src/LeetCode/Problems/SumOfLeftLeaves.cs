@@ -5,7 +5,7 @@ namespace LeetCode.Problems
 
     public class SumOfLeftLeavesProblem
     {
-        public int Sum(TreeNode root)
+        public static int Sum(TreeNode root)
         {
             var sum = 0;
             bool? cameFromLeftEdge = null;

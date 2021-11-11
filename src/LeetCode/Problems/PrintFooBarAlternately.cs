@@ -4,9 +4,10 @@ namespace LeetCode.Problems.PrintFooBarAlternately
     // https://leetcode.com/problems/print-foobar-alternately/
     public class FooBar
     {
-        private int n;
-        private System.Threading.AutoResetEvent fooEvent = new System.Threading.AutoResetEvent(false);
-        private System.Threading.AutoResetEvent barEvent = new System.Threading.AutoResetEvent(false);
+        private readonly int n;
+        private readonly System.Threading.AutoResetEvent fooEvent = new(false);
+        private static readonly System.Threading.AutoResetEvent autoResetEvent = new(false);
+        private readonly System.Threading.AutoResetEvent barEvent = autoResetEvent;
 
         public FooBar(int n)
         {

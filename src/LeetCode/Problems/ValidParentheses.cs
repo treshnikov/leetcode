@@ -7,7 +7,7 @@ namespace LeetCode.Problems
     /// https://leetcode.com/problems/valid-parentheses/
     public class ValidParentheses
     {
-        public bool IsValid(string s)
+        public static bool IsValid(string s)
         {
             var openBrackets = new Stack<char>();
             foreach (var b in s)

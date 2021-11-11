@@ -27,10 +27,9 @@ namespace Test
         [TestCase]
         public void RemoveNthFromEndTest()
         {
-            var removeNthFromEnd = new RemoveNthFromEndProblem();
             var head = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5, new ListNode(6, new ListNode(7)))))));
 
-            removeNthFromEnd.RemoveNthFromEnd(head, 2);
+            RemoveNthFromEndProblem.RemoveNthFromEnd(head, 2);
 
             Assert.IsTrue(head.next.next.next.next.next.val == 7);
         }
@@ -42,8 +41,7 @@ namespace Test
         [TestCase("{[]}", true)]
         public void ValidParenthesesTest(string input, bool expectedResult)
         {
-            var validParentheses = new ValidParentheses();
-            var res = validParentheses.IsValid(input);
+            var res = ValidParentheses.IsValid(input);
 
             Assert.AreEqual(res, expectedResult);
         }
@@ -51,11 +49,10 @@ namespace Test
         [TestCase]
         public void MergeTwoSortedListsTest()
         {
-            var mergeTwoSortedLists = new MergeTwoSortedLists();
             var a = new ListNode(1, new ListNode(2, new ListNode(4)));
             var b = new ListNode(1, new ListNode(3, new ListNode(4)));
 
-            var res = mergeTwoSortedLists.MergeTwoLists(a, b);
+            var res = MergeTwoSortedLists.MergeTwoLists(a, b);
 
             Assert.IsTrue(res.val == 1);
             Assert.IsTrue(res.next.val == 1);
@@ -72,9 +69,7 @@ namespace Test
         [TestCase(new int[] { 0 }, 1)]
         public void MissingNumberTest(int[] nums, int expectedValue)
         {
-            var proc = new MissingNumber();
-
-            var res = proc.Do(nums);
+            var res = MissingNumber.Do(nums);
 
             Assert.AreEqual(res, expectedValue);
         }
@@ -83,9 +78,7 @@ namespace Test
         [TestCase(new int[] { 1, 1 }, new int[] { 2 })]
         public void FindAllNumbersDisappearedInAnArrayTest(int[] nums, int[] expectedValues)
         {
-            var proc = new FindAllNumbersDisappearedInAnArray();
-
-            var res = proc.FindDisappearedNumbers(nums);
+            var res = FindAllNumbersDisappearedInAnArray.FindDisappearedNumbers(nums);
 
             Assert.AreEqual(res, expectedValues);
         }
@@ -102,8 +95,7 @@ namespace Test
         [TestCase]
         public void SumLeftLeaves()
         {
-            var proc = new SumOfLeftLeavesProblem();
-            var res = proc.Sum(new TreeNode(3, new TreeNode(9), new TreeNode(20, new TreeNode(15), new TreeNode(7))));
+            var res = SumOfLeftLeavesProblem.Sum(new TreeNode(3, new TreeNode(9), new TreeNode(20, new TreeNode(15), new TreeNode(7))));
 
             Assert.AreEqual(res, 24);
         }
@@ -122,11 +114,10 @@ namespace Test
         [TestCase]
         public void MergeKSortedListsTest()
         {
-            var proc = new MergeKSortedLists();
             ListNode[] nodes = new ListNode[]{new ListNode(1, new ListNode(4, new ListNode(5))),
                                               new ListNode(1, new ListNode(3, new ListNode(4))),
                                               new ListNode(2, new ListNode(6))};
-            var res = proc.Do(nodes);
+            var res = MergeKSortedLists.Do(nodes);
 
             Assert.IsTrue(res.val == 1);
             Assert.IsTrue(res.next.val == 1);
@@ -136,6 +127,18 @@ namespace Test
             Assert.IsTrue(res.next.next.next.next.next.val == 4);
             Assert.IsTrue(res.next.next.next.next.next.next.val == 5);
             Assert.IsTrue(res.next.next.next.next.next.next.next.val == 6);
+        }
+
+        [TestCase]
+        public void SwapNodesinPairsTest()
+        {
+            var head = new ListNode(1, new ListNode(2, new ListNode(3)));
+            
+            var res = SwapNodesinPairs.SwapPairs(head);
+
+            Assert.IsTrue(res.val == 2);
+            Assert.IsTrue(res.next.val == 1);
+            Assert.IsTrue(res.next.next.val == 3);
         }
     }
 }

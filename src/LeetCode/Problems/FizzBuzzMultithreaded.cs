@@ -8,12 +8,12 @@ namespace LeetCode.Problems
     // https://leetcode.com/problems/fizz-buzz-multithreaded
     public class FizzBuzz
     {
-        private int n;
+        private readonly int n;
         private int i;
-        private Semaphore numberSemaphore;
-        private Semaphore fizzSemaphore;
-        private Semaphore buzzSemaphore;
-        private Semaphore fizzBuzzSemaphore;
+        private readonly Semaphore numberSemaphore;
+        private readonly Semaphore fizzSemaphore;
+        private readonly Semaphore buzzSemaphore;
+        private readonly Semaphore fizzBuzzSemaphore;
 
         public FizzBuzz(int n)
         {

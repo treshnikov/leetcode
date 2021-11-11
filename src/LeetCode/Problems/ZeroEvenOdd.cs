@@ -6,10 +6,10 @@ namespace LeetCode.Problems.ZeroEvenOdd
 {
     public class ZeroEvenOdd
     {
-        private int n;
-        private System.Threading.AutoResetEvent zeroEvent = new System.Threading.AutoResetEvent(false);
-        private System.Threading.AutoResetEvent evenEvent = new System.Threading.AutoResetEvent(false);
-        private System.Threading.AutoResetEvent oddEvent = new System.Threading.AutoResetEvent(false);
+        private readonly int n;
+        private readonly System.Threading.AutoResetEvent zeroEvent = new(false);
+        private readonly System.Threading.AutoResetEvent evenEvent = new(false);
+        private readonly System.Threading.AutoResetEvent oddEvent = new(false);
 
 
         public ZeroEvenOdd(int n)

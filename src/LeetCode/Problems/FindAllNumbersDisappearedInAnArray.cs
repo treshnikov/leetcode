@@ -8,7 +8,7 @@ namespace LeetCode.Problems
     /// </summary>
     public class FindAllNumbersDisappearedInAnArray
     {
-        public List<int> FindDisappearedNumbers(int[] nums)
+        public static List<int> FindDisappearedNumbers(int[] nums)
         {
             var i = 0;
 

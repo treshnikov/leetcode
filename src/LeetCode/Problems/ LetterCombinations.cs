@@ -20,7 +20,8 @@ namespace LeetCode.Problems
             return res;
         }
 
-        private static Dictionary<char, string> dict = new Dictionary<char, string>{
+        private static readonly Dictionary<char, string> dict = new()
+        {
                 {'2', "abc"},
                 {'3', "def"},
                 {'4', "ghi"},

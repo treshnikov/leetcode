@@ -8,7 +8,7 @@ namespace LeetCode.Problems
     /// </summary>
     public class MergeKSortedLists
     {
-        public ListNode Do(ListNode[] lists)
+        public static ListNode Do(ListNode[] lists)
         {
             ListNode head = null;
             ListNode current = null;
@@ -35,7 +35,7 @@ namespace LeetCode.Problems
             return head;
         }
 
-        private int GetNodeIdxWithMinValue(List<ListNode> nodes)
+        private static int GetNodeIdxWithMinValue(List<ListNode> nodes)
         {
             int res = -1;
 

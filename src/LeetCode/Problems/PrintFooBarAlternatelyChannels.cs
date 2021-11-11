@@ -5,8 +5,8 @@ namespace LeetCode.Problems.PrintFooBarAlternatelyChannels
     // https://leetcode.com/problems/print-foobar-alternately/
     public class FooBar
     {
-        private int n;
-        private System.Threading.Channels.Channel<int> chanell = System.Threading.Channels.Channel.CreateBounded<int>(
+        private readonly int n;
+        private readonly System.Threading.Channels.Channel<int> chanell = System.Threading.Channels.Channel.CreateBounded<int>(
             new System.Threading.Channels.BoundedChannelOptions(1000)
             {
                 FullMode = System.Threading.Channels.BoundedChannelFullMode.DropOldest
