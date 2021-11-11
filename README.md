@@ -26,6 +26,7 @@ Code snippets for the [leetcode](https://leetcode.com) problems.
 - Sum Root to Leaf Numbers
 - Generate Parentheses
 - Merge k Sorted Lists
+- Swap Nodes in Pairs
 ## Concurrency
 - Sum of Left Leaves
 - Print in Order
