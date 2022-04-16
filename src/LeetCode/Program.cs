@@ -135,6 +135,21 @@ namespace LeetCode
 
             // var head = new ListNode(1, new ListNode(2, new ListNode(3)));
             // var res = SwapNodesinPairs.SwapPairs(head);
+
+            // var c = new RemoveDuplicatesFromSortedArray();
+            // var nums = new int[] { 1,1,2,3 };
+            // var res = c.RemoveDuplicates(nums);
+            // Console.WriteLine(res);
+
+            var res = new ImplementStrStr().StrStr("hello", "ll");
+            Console.WriteLine(res);
+            res = new ImplementStrStr().StrStr("a", "a");
+            Console.WriteLine(res);
+            res = new ImplementStrStr().StrStr("abc", "c");
+            Console.WriteLine(res);
+            res = new ImplementStrStr().StrStr("mississippi", "issip");
+            Console.WriteLine(res);
+            Console.ReadLine();
         }
     }
 }

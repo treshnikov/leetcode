@@ -27,6 +27,8 @@ Code snippets for the [leetcode](https://leetcode.com) problems.
 - Generate Parentheses
 - Merge k Sorted Lists
 - Swap Nodes in Pairs
+- Remove Duplicates from Sorted Array
+- Implement strStr
 ## Concurrency
 - Sum of Left Leaves
 - Print in Order
