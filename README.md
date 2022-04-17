@@ -29,6 +29,7 @@ Code snippets for the [leetcode](https://leetcode.com) problems.
 - Swap Nodes in Pairs
 - Remove Duplicates from Sorted Array
 - Implement strStr
+- Increasing Order Search Tree
 ## Concurrency
 - Sum of Left Leaves
 - Print in Order

@@ -141,14 +141,18 @@ namespace LeetCode
             // var res = c.RemoveDuplicates(nums);
             // Console.WriteLine(res);
 
-            var res = new ImplementStrStr().StrStr("hello", "ll");
-            Console.WriteLine(res);
-            res = new ImplementStrStr().StrStr("a", "a");
-            Console.WriteLine(res);
-            res = new ImplementStrStr().StrStr("abc", "c");
-            Console.WriteLine(res);
-            res = new ImplementStrStr().StrStr("mississippi", "issip");
-            Console.WriteLine(res);
+            //var res = new ImplementStrStr().StrStr("hello", "ll");
+            //Console.WriteLine(res);
+            //res = new ImplementStrStr().StrStr("a", "a");
+            //Console.WriteLine(res);
+            //res = new ImplementStrStr().StrStr("abc", "c");
+            //Console.WriteLine(res);
+            //res = new ImplementStrStr().StrStr("mississippi", "issip");
+            //Console.WriteLine(res);
+
+            var p = new IncreasingOrderSearchTree();
+            var res = p.IncreasingBST(new TreeNode(5,
+                                new TreeNode(3, new TreeNode(2, new TreeNode(1)), new TreeNode(4)), new TreeNode(6, null, new TreeNode(8, new TreeNode(7), new TreeNode(9)))));
             Console.ReadLine();
         }
     }
