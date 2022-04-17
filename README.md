@@ -30,6 +30,7 @@ Code snippets for the [leetcode](https://leetcode.com) problems.
 - Remove Duplicates from Sorted Array
 - Implement strStr
 - Increasing Order Search Tree
+- Binary Tree Inorder Traversal
 ## Concurrency
 - Sum of Left Leaves
 - Print in Order
