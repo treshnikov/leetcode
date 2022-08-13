@@ -150,9 +150,11 @@ namespace LeetCode
             //res = new ImplementStrStr().StrStr("mississippi", "issip");
             //Console.WriteLine(res);
 
-            var p = new IncreasingOrderSearchTree();
-            var res = p.IncreasingBST(new TreeNode(5,
-                                new TreeNode(3, new TreeNode(2, new TreeNode(1)), new TreeNode(4)), new TreeNode(6, null, new TreeNode(8, new TreeNode(7), new TreeNode(9)))));
+            // var p = new IncreasingOrderSearchTree();
+            // var res = p.IncreasingBST(new TreeNode(5,
+            //                     new TreeNode(3, new TreeNode(2, new TreeNode(1)), new TreeNode(4)), new TreeNode(6, null, new TreeNode(8, new TreeNode(7), new TreeNode(9)))));
+
+            Console.WriteLine(AddBinaryProblem.AddBinary("1010", "1011"));
             Console.ReadLine();
         }
     }
