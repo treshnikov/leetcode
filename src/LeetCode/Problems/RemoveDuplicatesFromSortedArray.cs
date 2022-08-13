@@ -11,7 +11,7 @@ namespace LeetCode.Problems
             var res = new int[nums.Length];
             var idx = 0;
 
-            for (int i = 0;i < nums.Length;i++)
+            for (int i = 0; i < nums.Length; i++)
             {
                 if (dict.Contains(nums[i]))
                 {
