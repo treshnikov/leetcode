@@ -4,6 +4,7 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>net5.0</TargetFramework>
 		<CodeAnalysisRuleSet>../../.stylecop/stylecop.ruleset</CodeAnalysisRuleSet>
+    <LangVersion>10</LangVersion>
 	</PropertyGroup>
 
 </Project>

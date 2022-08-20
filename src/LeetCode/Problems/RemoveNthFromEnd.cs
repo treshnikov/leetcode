@@ -14,7 +14,7 @@ namespace LeetCode.Problems
     // }
 
     /// <summary>
-    /// https://leetcode.com/problems/remove-nth-node-from-end-of-list/submissions/
+    /// https://leetcode.com/problems/remove-nth-node-from-end-of-list
     /// </summary>
     public class RemoveNthFromEndProblem
     {
@@ -25,28 +25,40 @@ namespace LeetCode.Problems
                 return null;
             }
 
-            var list = new List<ListNode>();
-            var currentNode = head;
-            while (currentNode != null)
+            var stack = new Stack<ListNode>();
+            var current = head;
+            while(current != null)
             {
-                list.Add(currentNode);
-                currentNode = currentNode.next;
+                stack.Push(current);
+                current = current.next;
+            }
 
-                if (list.Count > n + 1)
+            var idx = 0;
+            ListNode nodeToDelete;
+            while(stack.Count > 0)
+            {
+                var node = stack.Pop();
+                idx++;
+
+                if (idx == n)
                 {
-                    list.RemoveAt(0);
+                    nodeToDelete = node;
+
+                    if (stack.Count == 0)
+                    {
+                        return head.next;
+                    }
+                    else
+                    {
+                        var prev = stack.Pop();
+                        prev.next = nodeToDelete.next;
+                        nodeToDelete.next = null;
+                        nodeToDelete = null;
+
+                        return head;
+                    }
                 }
             }
-
-            if (list.Count != n + 1)
-            {
-                return head.next;
-                 
-            }
-
-            var nodeToDelete = list[1];
-            list[0].next = nodeToDelete.next;
-
             return head;
         }
     }
