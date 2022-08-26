@@ -1,4 +1,5 @@
-﻿using LeetCode.Problems;
+﻿using System.Text;
+using LeetCode.Problems;
 using System;
 using System.Collections.Generic;
 
@@ -86,11 +87,8 @@ namespace LeetCode
             //Console.WriteLine(MyAtoi.Main("4193 with words"));
             //Console.WriteLine(MyAtoi.Main("words and 987"));
             //Console.WriteLine(MyAtoi.Main("-91283472332"));
-
             //Console.WriteLine(IntPalindrome.IsPalindrome(10));
-
             //Console.WriteLine(IntegerToRoman.IntToRoman(3));
-
             //Console.WriteLine(RomanToInteger.RomanToInt("MCMXCIV"));
 
             //var res = MergeTwoSortedArrays.Merge(new int[] { 0, 1, 2, 7, 9 }, new int[] { 3, 8, 12, 15 });
@@ -154,8 +152,11 @@ namespace LeetCode
             // var res = p.IncreasingBST(new TreeNode(5,
             //                     new TreeNode(3, new TreeNode(2, new TreeNode(1)), new TreeNode(4)), new TreeNode(6, null, new TreeNode(8, new TreeNode(7), new TreeNode(9)))));
 
-            Console.WriteLine(AddBinaryProblem.AddBinary("1010", "1011"));
-            Console.ReadLine();
+            //Console.WriteLine(AddBinaryProblem.AddBinary("1010", "1011"));
+
+            //var res = TwoSum.Do2(new []{2,7,11,15}, 9);
+
+            var res = LongestConsecutiveSolution.LongestConsecutive(new int[] {100,4,200,1,3,2});
         }
     }
 }
