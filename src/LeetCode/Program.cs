@@ -156,7 +156,13 @@ namespace LeetCode
 
             //var res = TwoSum.Do2(new []{2,7,11,15}, 9);
 
-            var res = LongestConsecutiveSolution.LongestConsecutive(new int[] {100,4,200,1,3,2});
+            //var res = LongestConsecutiveSolution.LongestConsecutive(new int[] {100,4,200,1,3,2});
+
+            var cnt = new CountSquaresSolution().CountSquares(new int[3][]{
+            new int[4]{0, 1,    1, 1},
+            new int[4]{1, 1, 1, 1},
+            new int[4]{0, 1, 1, 1}
+        });
         }
     }
 }
